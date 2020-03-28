@@ -1,0 +1,9 @@
+libdir=@CMAKE_INSTALL_FULL_LIBDIR@
+includedir=@CMAKE_INSTALL_FULL_INCLUDEDIR@
+
+Name: libQAdvancedSpinBox
+Version: @CPACK_PACKAGE_VERSION@
+Description: Adds Qt QSpinBox and QDoubleSpinBox capability to change digits with mouse scroll.
+Requires: Qt5Core, Qt5Gui, Qt5Widgets
+Libs: -L${libdir} -lQAdvancedSpinBox
+Cflags: -I${includedir}

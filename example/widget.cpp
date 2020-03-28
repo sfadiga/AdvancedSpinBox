@@ -1,7 +1,8 @@
 #include "widget.h"
 #include "ui_widget.h"
 
-#include "advancedspinbox.h"
+#include <QAdvancedSpinBox/AdvancedSpinBox.h>
+#include <QAdvancedSpinBox/AdvancedDoubleSpinBox.h>
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)

@@ -1,0 +1,2 @@
+Adds Qt QSpinBox and QDoubleSpinBox capability to change digits with mouse scroll.
+GUI buttons are not yet implemented.

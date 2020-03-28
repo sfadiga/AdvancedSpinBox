@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>358</width>
+    <height>137</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Demo</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="AdvancedDoubleSpinBox" name="doubleSpinBox2">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="suffix">
+        <string> MHz</string>
+       </property>
+       <property name="decimals">
+        <number>4</number>
+       </property>
+       <property name="maximum">
+        <double>99999.990000000005239</double>
+       </property>
+       <property name="value">
+        <double>1024.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="AdvancedDoubleSpinBox" name="doubleSpinBox">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="prefix">
+        <string>power </string>
+       </property>
+       <property name="suffix">
+        <string> µW</string>
+       </property>
+       <property name="decimals">
+        <number>4</number>
+       </property>
+       <property name="maximum">
+        <double>99999.990000000005239</double>
+       </property>
+       <property name="value">
+        <double>30.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="AdvancedDoubleSpinBox" name="doubleSpinBox3">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="prefix">
+        <string>$ </string>
+       </property>
+       <property name="decimals">
+        <number>4</number>
+       </property>
+       <property name="minimum">
+        <double>-99999.990000000005239</double>
+       </property>
+       <property name="maximum">
+        <double>99999.990000000005239</double>
+       </property>
+       <property name="value">
+        <double>-48.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="AdvancedSpinBox" name="spinBox">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="maximum">
+      <number>999999</number>
+     </property>
+     <property name="displayIntegerBase">
+      <number>16</number>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AdvancedDoubleSpinBox</class>
+   <extends>QDoubleSpinBox</extends>
+   <header location="global">QAdvancedSpinBox/AdvancedDoubleSpinBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>AdvancedSpinBox</class>
+   <extends>QSpinBox</extends>
+   <header location="global">QAdvancedSpinBox/AdvancedSpinBox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
